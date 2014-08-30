@@ -1,13 +1,22 @@
 /*基本*/
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+::-webkit-scrollbar{
+	width:10px;
+	height:10px;
+	background-color:transparent;
+}
+::-webkit-scrollbar-thumb{background-color:#666;}
+::-webkit-scrollbar-thumb:hover{background-color:#555;}
+::-webkit-scrollbar-thumb:active{background-color:#444;}
+::-webkit-scrollbar-button{display:none;}
 html{
 	background:#FFF;
 	color:#333;
 	font-family:"Microsoft Yahei","Arial","SimHei";
 	font-size:1em;
+	white-space-collapse:discard;
 }
-pre,code,kbd,samp,var{
-	font-family:"Yahei Consolas Hybrid","Consolas","Courier New","monospace";
-}
+pre,code,kbd,samp,var{font-family:"Yahei Consolas Hybrid","Consolas","Courier New","monospace";}
 a{
 	color:#3B8BBA;
 	text-decoration:none;
@@ -24,6 +33,10 @@ abbr[title]{
 	border-bottom:1px dotted #DDD;
 	margin:0.2em;
 }
+/*字体样式*/
+.left{text-align:left;}
+.center{text-align:center;}
+.right{text-align:right;}
 /*标题*/
 header{padding:0.5em 1em;}
 h1{font-size:2em;}
@@ -34,23 +47,48 @@ h5{font-size:1em;}
 h6{font-size:0.83em;}
 /*导航栏*/
 @media screen and (min-width:760px){
-	nav{height:2.5em !important;}
+	nav{height:2.5em;}
+	nav ul{
+		height:2.5em !important;
+	}
+	nav li{
+		width:4.5em;
+		overflow:hidden;
+	}
+	nav a{
+		display:inline-block;
+		position:absolute;
+		text-align:center;
+		width:4.5em;
+		transition:all 200ms;
+	}
+	nav a:hover,nav a:active{
+		margin-top:-2.5em;
+		transition:all 200ms;
+	}
+	nav a:after{
+		content:attr(data-caption);
+		width:100%;
+		display:inline-block;
+	}
 }
 nav{
-	line-height:2.5em;
 	width:100%;
+	line-height:2.5em;
 }
 nav ul{
 	margin:0;
+	overflow:hidden;
 	padding:0;
 	padding-left:1em;
 }
 nav li{
 	display:inline-block;
 	list-style:none;
-	padding-left:1.2em;
-	padding-right:1.2em;
+	position:relative;
+	height:2.5em;
 }
+nav a:hover{text-decoration:none;}
 /*内容*/
 .content{padding:0.5em 1em;}
 /*尾注*/

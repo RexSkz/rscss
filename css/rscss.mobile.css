@@ -13,4 +13,9 @@
 		padding:0;
 		text-align:center;
 	}
+	nav a,nav a:after{margin:0 0.5em;}
+	nav a:after{
+		content:attr(data-caption);
+		display:inline-block;
+	}
 }
