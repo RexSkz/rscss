@@ -1,0 +1,10 @@
+table{
+	font-size:0.95em;
+	width:100%;
+}
+td,th{padding:0.4em;}
+.table-border td,.table-border th{
+	border-collapse:collapse;
+	border:1px solid #CCC;
+}
+.table-border th{background-color:#DDD;}

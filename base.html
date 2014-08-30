@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/rscss.css">
 	<link rel="stylesheet" href="css/rscss.mobile.css">
+	<link rel="stylesheet" href="css/rscss.table.css">
 	<link rel="stylesheet" href="css/rscss.function.css">
 	<script src="js/rscss.function.js"></script>
 	<title>基础 - RSCSS</title>
@@ -42,6 +43,30 @@
 		<blockquote>引入功能非常丰富的库并不一定是件好事——有时候太多用不到的功能会占用很大空间。<br />人们用bootstrap因为看上了它的流式布局，jQuery则主要是因为选择器、动画和Ajax。但是为了这么几个功能就引入几十k甚至上百k的代码，这真的合算吗？</blockquote>
 		<h3>缩写</h3>
 		<p>这里是一个缩写的栗子：<abbr title="别问我这个名字是怎么起的">RSCSS</abbr>是一个简易的<abbr title="层叠式样式表">CSS</abbr>框架。</p>
+		<h3>隐藏元素</h3>
+		<p>RSCSS允许您设置在特定设备上隐藏的元素。</p>
+		<table class="table-border">
+			<thead>
+				<tr>
+					<th>类名</th>
+					<th>描述</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><var>hidden-phone</var></td>
+					<td>当屏幕宽度小于等于<var>768px</var>时，该类元素将被隐藏。</td>
+				</tr>
+				<tr>
+					<td><var>hidden-tablet</var></td>
+					<td>当屏幕宽度大于<var>768px</var>并且小于<var>980px</var>时，该类元素将被隐藏。</td>
+				</tr>
+				<tr>
+					<td><var>hidden-desktop</var></td>
+					<td>当屏幕宽度大于等于<var>980px</var>时，该类元素将被隐藏。</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	<footer>
 		<div>RSCSS by Rex Zeng (<a href="http://rexskz.sinaapp.com">Personal Space</a>)</div>
