@@ -19,11 +19,11 @@
 	border-radius:0.3em;
 	font-size:0.85em;
 	padding:0.4em 0.5em;
-	transition:border-color 500ms;
+	transition:border-color 200ms;
 }
 .form input[type=text]:focus,.form input[type=password]:focus,.form input[type=email]:focus,
 .form input[type=search]:focus,.form input[type=number]:focus{
-	transition:border-color 500ms;
+	transition:border-color 200ms;
 	border-color:#129FEA;
 }
 .form input[type=submit],.form input[type=reset],.form input[type=button]{
