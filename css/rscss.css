@@ -1,0 +1,64 @@
+/*基本*/
+html{
+	background:#FFF;
+	color:#333;
+	font-family:"Microsoft Yahei","Arial","SimHei";
+	font-size:1em;
+}
+pre,code,kbd,samp,var{
+	font-family:"Yahei Consolas Hybrid","Consolas","Courier New","monospace";
+}
+a{
+	color:#3B8BBA;
+	text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+blockquote{
+	border-left:5px solid #DDD;
+	font-size:0.9em;
+	font-style:italic;
+	margin:1em 1em;
+	padding-left:0.8em;
+}
+abbr[title]{
+	border-bottom:1px dotted #DDD;
+	margin:0.2em;
+}
+/*标题*/
+header{padding:0.5em 1em;}
+h1{font-size:2em;}
+h2{font-size:1.5em;}
+h3{font-size:1.25em;}
+h4{font-size:1.125em;}
+h5{font-size:1em;}
+h6{font-size:0.83em;}
+/*导航栏*/
+@media screen and (min-width:760px){
+	nav{height:2.5em !important;}
+}
+nav{
+	line-height:2.5em;
+	width:100%;
+}
+nav ul{
+	margin:0;
+	padding:0;
+	padding-left:1em;
+}
+nav li{
+	display:inline-block;
+	list-style:none;
+	padding-left:1.2em;
+	padding-right:1.2em;
+}
+/*内容*/
+.content{padding:0.5em 1em;}
+/*尾注*/
+footer{
+	padding:1em;
+	text-align:center;
+}
+footer div{
+	color:#999;
+	font-size:0.8em;
+}

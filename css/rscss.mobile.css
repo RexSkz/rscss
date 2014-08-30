@@ -1,0 +1,16 @@
+@media screen and (max-width:760px){
+	/*标题栏*/
+	header *{text-align:center;}
+	/*导航栏*/
+	nav{overflow:hidden;}
+	nav ul{
+		height:0;
+		padding:0;
+		transition:height 500ms;
+	}
+	nav li{
+		display:block;
+		padding:0;
+		text-align:center;
+	}
+}

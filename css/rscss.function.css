@@ -1,0 +1,16 @@
+.toggleNavBar{
+	display:none;
+}
+@media screen and (max-width:760px) {
+	.toggleNavBar{
+		top:0;
+		right:0;
+		width:2em;
+		height:2em;
+		line-height:2em;
+		display:inline-block;
+		text-align:center;
+		cursor:pointer;
+		position:absolute;
+	}
+}
