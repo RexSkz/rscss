@@ -4,4 +4,13 @@
 		display:block;
 		margin:0.4em 0;
 	}
+	.form-aligned label{
+		line-height:1.5em;
+		text-align:left;
+	}
+	.form-aligned .form-controlset{padding:0;}
+	.form-group input{
+		box-sizing:border-box;
+		width:100%;
+	}
 }

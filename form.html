@@ -34,7 +34,7 @@
 	<div class="content">
 		<h2>表单</h2>
 		<h3>默认表单</h3>
-		<p>给&lt;form&gt;添加类名form，就可以创建一个默认的表单。</p>
+		<p>给&lt;form&gt;添加类名<code>form</code>，就可以创建一个默认的表单。</p>
 		<form class="form">
 			<fieldset>
 				<legend>默认表单</legend>
@@ -54,6 +54,92 @@
 		&lt;input type="submit" value="登录" /&gt;
 	&lt;/fieldset&gt;
 &lt;/form&gt;</pre>
+		<h3>对齐式表单</h3>
+		<p>在默认表单的基础上再添加<code>form-aligned</code>。注意HTML结构也要做适当修改。</p>
+		<p>标签将被右对齐，不过在小屏幕上，表单将变成叠放式。</p>
+		<form class="form form-aligned">
+			<fieldset>
+				<legend>对齐式表单</legend>
+				<div>
+					<label for="name">用户名</label>
+					<input id="name" type="text" placeholder="请输入用户名" />
+				</div>
+				<div>
+					<label for="password">密码</label>
+					<input id="password" type="password" placeholder="请输入密码" />
+				</div>
+				<div>
+					<label for="email">邮箱</label>
+					<input id="email" type="email" placeholder="请输入邮箱" />
+				</div>
+				<div>
+					<label for="foo">神奇的标签</label>
+					<input id="foo" type="text" placeholder="在这里输入一些东西？" />
+				</div>
+				<div class="form-controlset">
+					<label for="cb" class="checkbox"><input id="cb" type="checkbox" />劳资才不阅读条款和协议呢</label>
+					<input type="submit" value="提交" />
+				</div>
+			</fieldset>
+		</form>
+		<p>代码如下：</p>
+		<pre>&lt;form class="form <em>form-aligned</em>"&gt;
+	&lt;fieldset&gt;
+		&lt;legend&gt;对齐式表单&lt;/legend&gt;
+		&lt;div&gt;
+			&lt;label for="name"&gt;用户名&lt;/label /&gt;
+			&lt;input id="name" type="text" placeholder="请输入用户名"&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="password"&gt;密码&lt;/label /&gt;
+			&lt;input id="password" type="password" placeholder="请输入密码"&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="email"&gt;邮箱&lt;/label /&gt;
+			&lt;input id="email" type="email" placeholder="请输入邮箱"&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;label for="foo"&gt;神奇的标签&lt;/label /&gt;
+			&lt;input id="foo" type="text" placeholder="在这里输入一些东西？"&gt;
+		&lt;/div&gt;
+		&lt;div class="<em>form-controlset</em>"&gt;
+			&lt;label for="cb" class="checkbox"&gt;&lt;input id="cb" type="checkbox" /&gt;劳资才不阅读条款和协议呢&lt;/label&gt;
+			&lt;input type="submit" value="提交" /&gt;
+		&lt;/div&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+		<h3>分组表单</h3>
+		<p>把相关联的元素用<code>fieldset</code>包裹起来，然后添加类名<code>form-group</code>，即可把input元素分组。</p>
+		<p>分组表单更适合用于移动设备。</p>
+		<form class="form">
+			<legend>分组表单</legend>
+			<fieldset class="form-group">
+				<input type="text" placeholder="用户名" />
+				<input type="text" placeholder="密码" />
+				<input type="email" placeholder="邮箱" />
+			</fieldset>
+			<fieldset class="form-group">
+				<input type="text" placeholder="另一个组" />
+				<input type="text" placeholder="更多选项" />
+			</fieldset>
+			<input type="submit" value="登录" />
+		</form>
+		<p>代码如下：</p>
+		<pre>&lt;form class="form"&gt;
+	&lt;legend&gt;分组表单&lt;/legend&gt;
+	&lt;fieldset <em>class="form-group"</em>&gt;
+		&lt;input type="text" placeholder="用户名" /&gt;
+		&lt;input type="text" placeholder="密码" /&gt;
+		&lt;input type="email" placeholder="邮箱" /&gt;
+	&lt;/fieldset&gt;
+	&lt;fieldset <em>class="form-group"</em>&gt;
+		&lt;input type="text" placeholder="另一个组" /&gt;
+		&lt;input type="text" placeholder="更多选项" /&gt;
+	&lt;/fieldset&gt;
+	&lt;input type="submit" value="登录" /&gt;
+&lt;/form&gt;</pre>
+		<h3>设置input的大小</h3>
+		<p>与网格布局相似，可以用<code>input-x</code>来控制input的元素宽度（当前容器宽度的x/12），例如设置了<code>input-3</code>之后宽度就为四分之一。</p>
 	</div>
 	<footer>
 		<div>RSCSS by Rex Zeng (<a href="http://rexskz.sinaapp.com">Personal Space</a>)</div>

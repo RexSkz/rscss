@@ -32,3 +32,21 @@
 	border-radius:0.3em;
 	font-size:0.9em;
 }
+.form-aligned label{
+	display:inline-block;
+	font-size:0.9em;
+	color:#333;
+	line-height:2.5em;
+	text-align:right;
+	width:10em;
+}
+.form-aligned .form-controlset{padding-left:10em;}
+.form-aligned .form-controlset label{
+	display:block;
+	text-align:left;
+	width:auto;
+}
+.form-group input{
+	display:block;
+	margin:0.2em 0 !important;
+}
