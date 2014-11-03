@@ -2,20 +2,30 @@
 	/*标题栏*/
 	header *{text-align:center;}
 	/*导航栏*/
-	nav{overflow:hidden;}
-	nav ul{
-		height:0;
-		padding:0;
-		transition:height 500ms;
+	nav{
+		height:2.5em;
+		transition:all 200ms ease;
 	}
 	nav li{
 		display:block;
+		width:100%;
 		padding:0;
 		text-align:center;
 	}
-	nav a,nav a:after{margin:0 0.5em;}
-	nav a:after{
-		content:attr(data-caption);
-		display:inline-block;
+	nav a:hover,nav a:active{
+		margin-top:0;
+		transition:none;
+	}
+	nav a:after{display:none;}
+	/*菜单滑动效果*/
+	#menu-toggle:after{
+		display:block;
+		width:100%;
+		height:2.5em;
+		cursor:pointer;
+	}
+	.menu-toggle nav{
+		height:20em !important;
+		transition:all 200ms ease;
 	}
 }

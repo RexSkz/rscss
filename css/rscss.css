@@ -28,15 +28,10 @@ pre,code,kbd,samp,var{
 	margin:0.2em;
 	padding:0.1em 0.4em;
 }
+div{position:relative;}
 var{white-space:nowrap;}
-em{
-	font-style:normal;
-	color:#C00;
-}
-a{
-	color:#3B8BBA;
-	text-decoration:none;
-}
+em{font-style:normal;color:#C00;}
+a{color:#3B8BBA;text-decoration:none;}
 a:hover{text-decoration:underline;}
 blockquote{
 	border-left:5px solid #DDD;
@@ -66,57 +61,42 @@ h4{font-size:1.125em;}
 h5{font-size:1em;}
 h6{font-size:0.83em;}
 /*导航栏*/
-@media screen and (min-width:768px){
-	nav{height:2.5em;}
-	nav ul{
-		height:2.5em !important;
-	}
-	nav li{
-		width:4.5em;
-		overflow:hidden;
-	}
-	nav a{
-		display:inline-block;
-		position:absolute;
-		text-align:center;
-		width:4.5em;
-		transition:all 200ms;
-	}
-	nav a:hover,nav a:active{
-		margin-top:-2.5em;
-		transition:all 200ms;
-	}
-	nav a:after{
-		content:attr(data-caption);
-		width:100%;
-		display:inline-block;
-	}
-}
 nav{
 	width:100%;
+	height:2.5em;
 	line-height:2.5em;
+	overflow:hidden;
 }
 nav ul{
 	margin:0;
-	overflow:hidden;
 	padding:0;
-	padding-left:1em;
+	overflow:hidden;
 }
 nav li{
 	display:inline-block;
 	list-style:none;
 	position:relative;
+	width:4.5em;
 	height:2.5em;
+	overflow:hidden;
 }
-nav a:hover{text-decoration:none;}
-/*内容*/
-.content{padding:0.5em 1em;}
-/*尾注*/
-footer{
-	padding:1em;
+nav a{
+	display:inline-block;
 	text-align:center;
+	width:4.5em;
+	transition:all 200ms;
 }
-footer div{
-	color:#999;
-	font-size:0.8em;
+nav a:hover,nav a:active{
+	margin-top:-2.5em;
+	transition:all 200ms;
 }
+nav a:after{
+	content:attr(data-caption);
+	width:100%;
+	display:inline-block;
+}
+/*内容*/
+.content{padding:0 1em;}
+/*尾注*/
+footer{padding:1em;text-align:center;}
+footer div{color:#999;font-size:0.8em;}

@@ -9,26 +9,25 @@
 	<link rel="stylesheet" href="css/rscss.css">
 	<link rel="stylesheet" href="css/rscss.mobile.css">
 	<link rel="stylesheet" href="css/rscss.function.css">
-	<script src="js/rscss.function.js"></script>
 	<title>主页 - RSCSS</title>
 </head>
 <body>
 	<header>
 		<h1>RSCSS</h1>
 		<h3>一个简易的响应式CSS框架</h3>
+		<nav>
+			<span id="menu-toggle" onclick="menuToggle()"></span>
+			<ul>
+				<li><a data-caption="Index" href="index.html">主页</a></li>
+				<li><a data-caption="Base" href="base.html">基础</a></li>
+				<li><a data-caption="Grid" href="grid.html">网格</a></li>
+				<li><a data-caption="Form" href="form.html">表单</a></li>
+				<li><a data-caption="Button" href="button.html">按钮</a></li>
+				<li><a data-caption="Table" href="table.html">表格</a></li>
+				<li><a data-caption="Layout" href="layout.html">布局</a></li>
+			</ul>
+		</nav>
 	</header>
-	<nav>
-		<span id="navCtrl" class="toggleNavBar" onclick="toggleNavBar()">↓</span>
-		<ul id="navUl"><!--
-			--><li><a data-caption="Index" href="index.html">主页</a></li><!--
-			--><li><a data-caption="Base" href="base.html">基础</a></li><!--
-			--><li><a data-caption="Grid" href="grid.html">网格</a></li><!--
-			--><li><a data-caption="Form" href="form.html">表单</a></li><!--
-			--><li><a data-caption="Button" href="button.html">按钮</a></li><!--
-			--><li><a data-caption="Table" href="table.html">表格</a></li><!--
-			--><li><a data-caption="Layout" href="layout.html">布局</a></li>
-		</ul>
-	</nav>
 	<div class="content">
 		<h2 class="center">从移动端到桌面端</h2>
 		<h2 class="center">开启您的RSCSS开发旅程</h2>
@@ -46,5 +45,6 @@
 		<div>RSCSS by Rex Zeng (<a href="http://rexskz.sinaapp.com">Personal Space</a>)</div>
 		<div>Copyright © 2014</div>
 	</footer>
+	<script src="js/rscss.function.js"></script>
 </body>
 </html>

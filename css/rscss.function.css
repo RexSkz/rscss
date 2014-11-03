@@ -1,16 +1,5 @@
-.toggleNavBar{
-	display:none;
-}
+/*菜单滑动效果*/
 @media screen and (max-width:768px) {
-	.toggleNavBar{
-		top:0;
-		right:0;
-		width:2em;
-		height:2em;
-		line-height:2em;
-		display:inline-block;
-		text-align:center;
-		cursor:pointer;
-		position:absolute;
-	}
+	#menu-toggle:after{content:"展开菜单";}
+	.menu-toggle #menu-toggle:after{content:"收起菜单";}
 }

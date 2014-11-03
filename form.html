@@ -18,19 +18,19 @@
 	<header>
 		<h1>RSCSS</h1>
 		<h3>一个简易的响应式CSS框架</h3>
+		<nav>
+			<span id="menu-toggle" onclick="menuToggle()"></span>
+			<ul>
+				<li><a data-caption="Index" href="index.html">主页</a></li>
+				<li><a data-caption="Base" href="base.html">基础</a></li>
+				<li><a data-caption="Grid" href="grid.html">网格</a></li>
+				<li><a data-caption="Form" href="form.html">表单</a></li>
+				<li><a data-caption="Button" href="button.html">按钮</a></li>
+				<li><a data-caption="Table" href="table.html">表格</a></li>
+				<li><a data-caption="Layout" href="layout.html">布局</a></li>
+			</ul>
+		</nav>
 	</header>
-	<nav>
-		<span id="navCtrl" class="toggleNavBar" onclick="toggleNavBar()">↓</span>
-		<ul id="navUl"><!--
-			--><li><a data-caption="Index" href="index.html">主页</a></li><!--
-			--><li><a data-caption="Base" href="base.html">基础</a></li><!--
-			--><li><a data-caption="Grid" href="grid.html">网格</a></li><!--
-			--><li><a data-caption="Form" href="form.html">表单</a></li><!--
-			--><li><a data-caption="Button" href="button.html">按钮</a></li><!--
-			--><li><a data-caption="Table" href="table.html">表格</a></li><!--
-			--><li><a data-caption="Layout" href="layout.html">布局</a></li>
-		</ul>
-	</nav>
 	<div class="content">
 		<h2>表单</h2>
 		<h3>默认表单</h3>
@@ -138,8 +138,6 @@
 	&lt;/fieldset&gt;
 	&lt;input type="submit" value="登录" /&gt;
 &lt;/form&gt;</pre>
-		<h3>设置input的大小</h3>
-		<p>与网格布局相似，可以用<code>input-x</code>来控制input的元素宽度（当前容器宽度的x/12），例如设置了<code>input-3</code>之后宽度就为四分之一。</p>
 	</div>
 	<footer>
 		<div>RSCSS by Rex Zeng (<a href="http://rexskz.sinaapp.com">Personal Space</a>)</div>
